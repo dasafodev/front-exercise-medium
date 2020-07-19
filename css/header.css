@@ -1,0 +1,64 @@
+/* 
+ /$$   /$$                           /$$                    
+| $$  | $$                          | $$                    
+| $$  | $$  /$$$$$$   /$$$$$$   /$$$$$$$  /$$$$$$   /$$$$$$ 
+| $$$$$$$$ /$$__  $$ |____  $$ /$$__  $$ /$$__  $$ /$$__  $$
+| $$__  $$| $$$$$$$$  /$$$$$$$| $$  | $$| $$$$$$$$| $$  \__/
+| $$  | $$| $$_____/ /$$__  $$| $$  | $$| $$_____/| $$      
+| $$  | $$|  $$$$$$$|  $$$$$$$|  $$$$$$$|  $$$$$$$| $$      
+|__/  |__/ \_______/ \_______/ \_______/ \_______/|__/       
+
+Archivo encargado del header y el navbar
+Actualmente no se tiene navegacion pero al seleccionar el appbar se
+desplegará un modal  
+
+*/
+                                                            
+                                                            
+                                                            
+
+
+
+
+
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    height: 50px;
+    background: var(--secondary-color);
+    border-radius: 4px;
+    list-style-type: none;
+}
+
+.menu--item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.menu--item__active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center ;
+    height: 100%;
+    color: var(--background-post-color);
+    font-weight: bold;
+    background: var(--primary-color);
+    /* box-sizing: border-box; */
+
+}
+
+
+.menu  li:first-child{
+    border-radius: 4px 0 0 4px;
+}
+
+.menu  li:last-child{
+    border-radius: 0 4px 4px 0;
+}
+  
+ 

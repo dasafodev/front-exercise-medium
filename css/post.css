@@ -1,0 +1,86 @@
+
+/* 
+ /$$$$$$$                       /$$    
+ | $$__  $$                     | $$    
+ | $$  \ $$ /$$$$$$   /$$$$$$$ /$$$$$$  
+ | $$$$$$$//$$__  $$ /$$_____/|_  $$_/  
+ | $$____/| $$  \ $$|  $$$$$$   | $$    
+ | $$     | $$  | $$ \____  $$  | $$ /$$
+ | $$     |  $$$$$$/ /$$$$$$$/  |  $$$$/
+ |__/      \______/ |_______/    \___/  
+                                        
+Archivo encargado de los posts de la pagina.
+Se tendran 3 tipos de post: important-post,alternative-post,post-list
+Ademas, se incorporan estilos para el diseño responsive
+ */
+ 
+
+
+
+.important-post,
+.alternative-post {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background: var(--background-post-color);
+  padding: 20px;
+  border-radius: 4px;
+  margin: 20px 0 20px;
+}
+
+.alternative-post {
+  grid-template-columns: 1fr 2fr;
+}
+
+.important-post--info {
+  padding-right: 10px;
+}
+
+.important-post--image,
+.alternative-post--image {
+  justify-self: end;
+  align-self: center;
+  width: 300px;
+  height: 150px;
+  padding: 5px;
+  border: var(--secondary-color) solid 1px;
+  border-radius: 4px;
+}
+.alternative-post--image {
+  justify-self: start;
+}
+
+.important-post--image img,
+.alternative-post--image img {
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.post-list {
+  border-radius: 4px;
+  padding: 20px;
+  background: var(--background-post-color);
+}
+.post {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+}
+
+.post--metadata {
+  padding-top: 5px;
+}
+
+/*
+Responsive
+*/
+
+@media only screen and (max-width: 767px) {
+  .important-post {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .important-post--image {
+    justify-self: center;
+  }
+}

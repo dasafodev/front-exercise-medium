@@ -1,0 +1,117 @@
+/* 
+#   /$$      /$$                 /$$           /$$
+#  | $$$    /$$$                | $$          | $$
+#  | $$$$  /$$$$  /$$$$$$   /$$$$$$$  /$$$$$$ | $$
+#  | $$ $$/$$ $$ /$$__  $$ /$$__  $$ |____  $$| $$
+#  | $$  $$$| $$| $$  \ $$| $$  | $$  /$$$$$$$| $$
+#  | $$\  $ | $$| $$  | $$| $$  | $$ /$$__  $$| $$
+#  | $$ \/  | $$|  $$$$$$/|  $$$$$$$|  $$$$$$$| $$
+#  |__/     |__/ \______/  \_______/ \_______/|__/
+
+Archivo encargado del Modal y el overlay utilizado.
+Ademas, se incorporan animaciones al modal
+*/
+
+
+.overlay{
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.1s ease-in-out;
+}
+
+.overlay.active{
+    opacity:1;
+    visibility: visible;
+
+
+}
+
+.modal{
+    padding: 2em;
+    max-width: 500px;
+    background: white;
+    border-radius: 0.5em;
+    animation: modalIn 0.8s forwards;
+}
+
+@keyframes modalIn{
+    0%{
+        transform: translateY(-3000px);
+    }
+    60%{
+        transform: translateY(25px);
+    }
+    75%{
+        transform: translateY(-10px);
+    }
+    90%{
+        transform: translateY(5px);
+    }
+}
+
+@keyframes modalOut{
+    0%{
+        transform: translateY(5px);
+    }
+    60%{
+        transform: translateY(-10px);
+    }
+    75%{
+        transform: translateY(25px);
+    }
+    90%{
+        transform: translateY(-3000px);
+    }
+    100%{
+        transform: translateY(-3000px);
+    }
+}
+
+.modal--button__primary{
+    text-align: center;
+    background: #7DC800;
+    padding: .6em .8em .8em;
+    border: none;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: inset 0 -0.2em rgba(0, 0, 0, 0.2);
+    outline: 0;
+    transition: .2s;
+    will-change: transform;
+}
+
+.modal--button__secondary{
+    text-align: center;
+    background: #ff463b;
+    padding: .6em .8em .8em;
+    border: none;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: inset 0 -0.2em rgba(0, 0, 0, 0.2);
+    outline: 0;
+    transition: .2s;
+    will-change: transform;
+}
+
+.modal--button__primary:active{
+    transform: scale(0.8);
+
+}
+.modal--button__secondary:active{
+    transform: scale(0.8);
+
+}

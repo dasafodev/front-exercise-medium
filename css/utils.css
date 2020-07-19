@@ -1,0 +1,36 @@
+/* 
+ /$$   /$$   /$$     /$$ /$$          
+ | $$  | $$  | $$    |__/| $$          
+ | $$  | $$ /$$$$$$   /$$| $$  /$$$$$$$
+ | $$  | $$|_  $$_/  | $$| $$ /$$_____/
+ | $$  | $$  | $$    | $$| $$|  $$$$$$ 
+ | $$  | $$  | $$ /$$| $$| $$ \____  $$
+ |  $$$$$$/  |  $$$$/| $$| $$ /$$$$$$$/
+  \______/    \___/  |__/|__/|_______/ 
+                                        
+  Archvio encargado de las variables usadas en la pagina y ademas de 
+  crear clases especificas para añadir ciertas funcionalidades
+  */
+                                       
+                                       
+ 
+
+:root{
+    --primary-color:#C84451;
+    --secondary-color:#d6d6d6;
+    --background-post-color:white;
+    --background-body:#EEEEEE;
+}
+
+
+.red{
+    color: var(--primary-color) ;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.mb-2{
+    margin-bottom:20px ;
+}

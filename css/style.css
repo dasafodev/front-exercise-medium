@@ -1,0 +1,60 @@
+/* 
+  /$$$$$$   /$$               /$$          
+  /$$__  $$ | $$              | $$          
+ | $$  \__//$$$$$$   /$$   /$$| $$  /$$$$$$ 
+ |  $$$$$$|_  $$_/  | $$  | $$| $$ /$$__  $$
+  \____  $$ | $$    | $$  | $$| $$| $$$$$$$$
+  /$$  \ $$ | $$ /$$| $$  | $$| $$| $$_____/
+ |  $$$$$$/ |  $$$$/|  $$$$$$$| $$|  $$$$$$$
+  \______/   \___/   \____  $$|__/ \_______/
+                     /$$  | $$              
+                    |  $$$$$$/              
+                     \______/               
+  
+Archivo principal de los estilos de la pagina.
+Esta encargado de importar los demas archivos de estilos y ademas
+de darle estilos a los elementros principales de la pagina
+*/
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+@import url("utils.css");
+@import url("modal.css");
+@import url("footer.css");
+@import url("header.css");
+@import url("post.css");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    position: relative;
+    background: var(--background-body);
+    padding: 10px;
+}
+
+header, main{
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+h1{
+    font-size: 3em;
+}
+
+hr{
+    margin: 20px 0 20px;
+    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+}
+
+main{
+    margin-bottom: 80px;
+}
+

@@ -1,0 +1,45 @@
+
+/*
+#   /$$$$$$$$                    /$$                        
+#  | $$_____/                   | $$                        
+#  | $$     /$$$$$$   /$$$$$$  /$$$$$$    /$$$$$$   /$$$$$$ 
+#  | $$$$$ /$$__  $$ /$$__  $$|_  $$_/   /$$__  $$ /$$__  $$
+#  | $$__/| $$  \ $$| $$  \ $$  | $$    | $$$$$$$$| $$  \__/
+#  | $$   | $$  | $$| $$  | $$  | $$ /$$| $$_____/| $$      
+#  | $$   |  $$$$$$/|  $$$$$$/  |  $$$$/|  $$$$$$$| $$      
+#  |__/    \______/  \______/    \___/   \_______/|__/      
+#       
+Archivo encargado del footer y su posicion en la pagina.
+Dentro de este se incropora una seccion de social media con las imagenes de 
+las redes sociales
+*/
+
+
+
+
+footer {
+  position: fixed; /* Here's what sticks it */
+  bottom: 0; /* to the bottom of the window */
+  left: 0; /* and to the left of the window. */
+  height: 40px;
+  width: 100%;
+  padding-top: 20px;
+  background: var(--background-body);
+  color: gray;
+  text-align: center;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.footer--social {
+  display: flex;
+  width: 200px;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
